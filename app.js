@@ -28,7 +28,7 @@ app.use('/groups', groups);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('That is not Found');
-  err.status = 404;
+  err.status = 405;
   next(err);
 });
 
